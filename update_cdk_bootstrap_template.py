@@ -39,7 +39,7 @@ with open(args.template_file, 'rb') as stream:
             str_yaml = json.dumps(parsed_yaml)
 
             parsed_yaml = json.loads(str_yaml)
-        with open("./bootstrap-template.yaml", "w", encoding='utf8') as f:
+        with open("./my-bootstrap.yml", "w", encoding='utf8') as f:
             yaml.dump(parsed_yaml, f)
 
     #except yaml.YAMLError as exc:
